@@ -1,0 +1,49 @@
+<div id="app"></div>
+<audio controls autoplay loop hidden>
+  <source src="ameno.mp3" type="audio/mpeg" />
+</audio>
+<body background-color: #333>
+  <style>
+    html * {
+      background: #333;
+      background-image: url("bg.png");
+      background-repeat: no-repeat;
+      background-size: 1000px 750px;
+      background-position:top;
+    }
+    #app {
+      color: #fff;
+      font-family: monospace;
+      padding-top: 5em;
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+    }
+  </style>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script>
+    var app = document.getElementById("app");
+
+    var typewriter = new Typewriter(app, {
+      loop: true,
+      delay: 75,
+    });
+    typewriter
+
+      .typeString("Welcome to the church of Huge Carp.")
+      .pauseFor(700)
+      .deleteAll(100)
+      .typeString("Are you ready to embrace?")
+      .pauseFor(500)
+      .deleteAll(100)
+      .typeString("Good.")
+      .pauseFor(200)
+      .deleteAll(100)
+      .typeString("Join the Holy Church of the Huge Carp today.")
+      .pauseFor(900)
+      .deleteAll(100)
+      .typeString("https://t.me/joinchat/HGSEQ7F2YV2ihWuJ")
+      .pauseFor(8000)
+      .start();
+  </script>
+</body>
